@@ -1,17 +1,210 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&display=swap");
 body {
   font-family: 'Poiret One', cursive;
   margin: 0;
   padding: 0;
+  background-color: #ced2dd;
 }
 
-li {
+.container {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 30px;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar {
+  height: auto;
+  background-color: #00203FFF;
+  -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+          box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0px 0px;
+}
+
+.nav-bar ul li {
   list-style: none;
 }
 
-li a {
+.nav-bar ul li a {
   text-decoration: none;
   font-weight: 600;
+  font-size: 30px;
+  color: rgba(173, 239, 209, 0.774);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  letter-spacing: 4px;
+}
+
+.nav-bar ul li a:hover {
+  color: aliceblue;
+}
+
+.banner-part .banner-image-text {
+  min-height: 70vh;
+  background-image: url("/images/banner-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner-part .banner-image-text h1 {
+  font-size: 100px;
+  color: black;
+  font-weight: 700;
+}
+
+.welcome {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.welcome h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 40px 0px;
+}
+
+.welcome p {
+  max-width: 900px;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0px 0px;
+  text-align: justify;
+  margin-bottom: 70px;
+  line-height: 35px;
+}
+
+.about {
+  margin-top: 70px;
+  background-image: url("/images/clouds.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about .about-grids {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+}
+
+.about .about-grids img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about .about-text {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.about .about-text h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 40px 0px;
+}
+
+.about .about-text p {
+  max-width: 900px;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0px 0px;
+  text-align: justify;
+  margin-bottom: 70px;
+  line-height: 35px;
+}
+
+.about .about-pic img {
+  width: 100%;
+}
+
+.resume {
+  margin: 20px 0px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.resume h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.resume .boxes {
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+  color: aliceblue;
+}
+
+.resume .boxes h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 40px 0px;
+}
+
+.resume .boxes p {
   font-size: 20px;
+  font-weight: 400;
+  margin: 0px 0px;
+  text-align: justify;
+  margin-bottom: 70px;
+  line-height: 35px;
+}
+
+.resume .boxes .box {
+  padding: 0px 20px;
+  background-image: url("https://www.stratoscale.com/wp-content/uploads/2019/05/bigstock-168398480.jpg");
+  background-position: center;
+  -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+          box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */

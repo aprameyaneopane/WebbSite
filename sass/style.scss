@@ -1,17 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&display=swap');
 
 body{
     font-family: 'Poiret One', cursive;
     margin: 0;
     padding: 0;
+    background-color:rgb(206, 210, 221);
 }
 
-li{
-    list-style: none;
-    a{
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 20px;
+.container{
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 30px;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar{
+    height: auto;
+    background-color: #00203FFF;
+    box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 0px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 30px;
+                color: rgba(173, 239, 209, 0.774);
+                transition: 0.3s ease-out;
+                letter-spacing: 4px;
+                &:hover{
+                    color: aliceblue;
+                }
+            }
+        }
     }
 }
+
+.banner-part{
+    .banner-image-text{
+        min-height: 70vh;
+        background-image: url("/images/banner-pic.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        h1{
+            font-size: 100px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+        }
+    }
+}
+
+.welcome{
+    font-family: 'Advent Pro', sans-serif;
+    h1{
+        font-size: 50px;
+        font-weight: 400;
+        margin: 40px 0px;
+    }
+    p{
+        max-width: 900px;
+        font-size: 23px;
+        font-weight: 400;
+        margin: 0px 0px;
+        text-align: justify;
+        margin-bottom: 70px;
+        line-height: 35px;
+    }
+}
+
+.about{
+    margin-top: 70px;
+    background-image: url("/images/clouds.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .about-grids{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+
+        img{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .about-text{
+        font-family: 'Advent Pro', sans-serif;
+
+        h1{
+            font-size: 50px;
+            font-weight: 400;
+            margin: 40px 0px;
+        }
+
+        p{
+            max-width: 900px;
+            font-size: 23px;
+            font-weight: 400;
+            margin: 0px 0px;
+            text-align: justify;
+            margin-bottom: 70px;
+            line-height: 35px;
+        }
+    }
+
+    .about-pic{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.resume{
+    margin: 20px 0px;
+    font-family: 'Advent Pro', sans-serif;
+
+        h1{
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+    .boxes{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        font-family: 'Advent Pro', sans-serif;
+
+        color: aliceblue;
+
+        h1{
+            font-size: 35px;
+            font-weight: 400;
+            margin: 40px 0px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0px 0px;
+            text-align: justify;
+            margin-bottom: 70px;
+            line-height: 35px;
+        }
+
+        .box{
+            padding: 0px 20px;
+            background-image: url("https://www.stratoscale.com/wp-content/uploads/2019/05/bigstock-168398480.jpg");
+            background-position: center;
+            box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
+            border-radius: 20px;
+        }
+
+    }
+}
+
+
+
 
