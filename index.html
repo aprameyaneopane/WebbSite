@@ -11,15 +11,15 @@
 
 <body>
 
-    <section class="nav-bar">
+    <section class="nav-bar" id="home">
         <div class="container">
             <div class="navigation">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +51,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container about-grids">
             <div class="about-text flex-center">
                 <h1>About</h1>
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container flex-center">
             <h1>Resume</h1>
             <div class="boxes resume-grids">
@@ -116,6 +116,50 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="container flex-center">
+            <h1>Contact</h1>
+        </div>
+        <div class="container form-container">
+            <div class="forms-space">
+                <form action="#" method="GET" class="forms-forms" id="myForm" name="myForm">
+                    <div class="names">
+
+                        <div class="fname-alert-area column">
+                            <input type="text" name="fname" placeholder="First Name" id="fname" />
+                            <div id="alert-fname" class="error"></div>
+                        </div>
+
+                        <div class="lname-alert-area column">
+                            <input type="text" name="lname" placeholder="Last Name" id="lname" />
+                            <div id="alert-lname" class="error"></div>
+                        </div>
+
+                    </div>
+                    <div class="rest">
+
+                        <input type="email" name="email" placeholder="Email" id="email" />
+                        <div id="alert-email" class="error"></div>
+
+                        <textarea name="text" id="text" placeholder="Message"></textarea>
+                        <div id="alert-text" class="error"></div>
+
+                        <input type="submit" value="Submit" id="submit" onclick="return validateForm();" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h1>&copy;Aprameya Neopane</h1>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
 

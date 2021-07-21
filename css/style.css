@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poiret One', cursive;
   margin: 0;
@@ -206,5 +210,140 @@ body {
   -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
           box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.377);
   border-radius: 20px;
+}
+
+.contact h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 30px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contact .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .forms-forms {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.contact .names input {
+  font-size: 20px;
+  width: 435px;
+  height: 45px;
+  margin: 10px 0px;
+  border: 3px solid yellowgreen;
+  background-color: aliceblue;
+}
+
+.contact .names .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contact .rest input {
+  font-size: 20px;
+  width: 900px;
+  height: 45px;
+  margin: 15px 0px;
+  border: 3px solid yellowgreen;
+  background-color: aliceblue;
+}
+
+.contact .rest #text {
+  height: 230px;
+  width: 900px;
+  font-size: 20px;
+  border: 3px solid yellowgreen;
+  background-color: aliceblue;
+}
+
+.contact .rest #submit {
+  width: 150px;
+  border: 2px solid black;
+  background-color: #99d6e0;
+}
+
+.contact .error {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  height: 10px;
 }
 /*# sourceMappingURL=style.css.map */
