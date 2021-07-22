@@ -337,6 +337,12 @@ body {
   width: 150px;
   border: 2px solid black;
   background-color: #99d6e0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .rest #submit:hover {
+  background-color: #386cce;
 }
 
 .contact .error {
@@ -345,5 +351,50 @@ body {
   font-size: 20px;
   font-weight: 900;
   height: 10px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer .footer-content {
+  background-color: #00203FFF;
+  height: 20vh;
+}
+
+footer .footer-content h1 {
+  color: aliceblue;
+  margin-top: 50px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+footer .footer-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px;
+}
+
+footer .footer-content ul li {
+  list-style: none;
+}
+
+footer .footer-content ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(173, 239, 209, 0.774);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  letter-spacing: 4px;
+  margin: 0px 50px;
+}
+
+footer .footer-content ul li a:hover {
+  color: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */

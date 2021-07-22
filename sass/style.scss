@@ -264,6 +264,10 @@ body{
             width: 150px;
             border: 2px solid black;   
             background-color: rgb(153, 214, 224);
+            transition: 0.3s;
+            &:hover{
+                background-color: adjust-hue($color: #38b7ce, $degrees: 30);
+            }
         }
     
     }
@@ -276,6 +280,41 @@ body{
         height: 10px;
     }
 
+}
+
+footer{
+    margin-top: 50px;
+    .footer-content{
+        background-color: #00203FFF;
+        height: 20vh;
+        h1{
+            color: aliceblue;
+            margin-top: 50px;
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 0px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: rgba(173, 239, 209, 0.774);
+                    transition: 0.3s ease-out;
+                    letter-spacing: 4px;
+                    margin: 0px 50px;
+                    &:hover{
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
