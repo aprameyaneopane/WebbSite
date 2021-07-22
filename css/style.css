@@ -104,6 +104,10 @@ body {
   line-height: 35px;
 }
 
+.welcome img {
+  max-width: 90%;
+}
+
 .about {
   margin-top: 70px;
   background-image: url("/images/clouds.jpg");
@@ -261,6 +265,10 @@ body {
           justify-content: center;
 }
 
+.contact .forms-space {
+  width: 600px;
+}
+
 .contact .names {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +339,7 @@ body {
   font-size: 20px;
   border: 3px solid yellowgreen;
   background-color: aliceblue;
+  resize: none;
 }
 
 .contact .rest #submit {
@@ -391,7 +400,7 @@ footer .footer-content ul li a {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   letter-spacing: 4px;
-  margin: 0px 50px;
+  margin: 0px 2vw;
 }
 
 footer .footer-content ul li a:hover {

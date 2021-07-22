@@ -84,6 +84,10 @@ body{
         margin-bottom: 70px;
         line-height: 35px;
     }
+
+    img{
+        max-width: 90%;
+    }
 }
 
 .about{
@@ -92,7 +96,9 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
     .about-grids{
+
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -212,6 +218,10 @@ body{
         justify-content: center;
     }
 
+    .forms-space{
+        width: 600px;
+    }
+
     .names{
         display: flex;
         align-items: center;
@@ -257,7 +267,8 @@ body{
             width: 900px;
             font-size: 20px;   
             border: 3px solid yellowgreen;   
-            background-color: aliceblue;      
+            background-color: aliceblue;   
+            resize: none;
         }
 
         #submit{
@@ -298,6 +309,7 @@ footer{
             display: flex;
             justify-content: space-between;
             padding: 0px 0px;
+
             li{
                 list-style: none;
                 a{
@@ -307,13 +319,20 @@ footer{
                     color: rgba(173, 239, 209, 0.774);
                     transition: 0.3s ease-out;
                     letter-spacing: 4px;
-                    margin: 0px 50px;
+                    margin: 0px 2vw;
+
                     &:hover{
                         color: aliceblue;
                     }
+
                 }
+
             }
+
         }
+
+
+
     }
 }
 

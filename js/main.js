@@ -58,3 +58,8 @@ function validateForm() {
     }
 
 }
+
+function menu() {
+    let burger = document.getElementById("myTopnav");
+    burger.classList.toggle("open");
+}

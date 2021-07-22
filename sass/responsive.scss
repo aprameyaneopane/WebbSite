@@ -25,3 +25,70 @@
         }
     }
 }
+
+@media (max-width: 590px) {
+    
+    .resume{
+        .boxes{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .names{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #fname, #lname{
+        width: 92vw;
+    }
+
+    .welcome{
+        margin-top: 40px;
+    }
+
+    .nav-bar{
+        .navigation{
+            // display: none;
+        }
+        a{
+            font-size: 8px;
+            margin: 2vw;
+        }
+    }
+
+    .banner-image-text{
+        height: 95vh;
+    }
+
+
+    .hamburger{
+        margin: 20px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .line{
+            width: 50px;
+            height: 6px;
+            background-color: rgb(0, 25, 48);
+            margin: 15px;
+        }
+    }
+
+    .navigation{
+        position: absolute;
+        top: 0; //these two used to position the large box correctly
+        right: 0;
+        height: 95vh;
+        width: 100vw;
+        background: gold;
+        flex-direction: column;
+        display: none;
+        transition: all 1s ease-in-out;
+    }
+
+    .navigation.open{
+        height: 100vh;
+    }
+
+}
