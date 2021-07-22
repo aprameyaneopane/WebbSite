@@ -1,0 +1,16 @@
+@media (max-width: 950px) {
+  .resume .boxes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .contact .names input {
+    width: 44vw;
+  }
+  .contact .rest input {
+    width: 90vw;
+  }
+  .contact .rest #text {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

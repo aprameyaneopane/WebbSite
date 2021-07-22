@@ -1,0 +1,27 @@
+@media (max-width : 950px) {
+    
+    .resume{
+        .boxes{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contact{
+
+        .names{
+            input{
+                width: 44vw;
+            }
+        }
+
+        .rest{
+            input{
+                width: 90vw;
+            }
+            
+            #text{
+                width: 90vw;
+            }
+        }
+    }
+}
