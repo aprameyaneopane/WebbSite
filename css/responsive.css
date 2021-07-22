@@ -41,33 +41,41 @@
   }
   .hamburger {
     margin: 20px 30px;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
   }
   .hamburger .line {
     width: 50px;
     height: 6px;
-    background-color: #001930;
+    background-color: white;
     margin: 15px;
   }
-  .navigation {
-    position: absolute;
+  .nav-links.open {
+    -webkit-clip-path: circle(180vh at 90% -10%);
+            clip-path: circle(180vh at 90% -10%);
+  }
+  .nav-links {
+    margin-top: 0px;
+    border-radius: 0px;
+    position: fixed;
     top: 0;
-    right: 0;
-    height: 95vh;
-    width: 100vw;
-    background: gold;
+    left: 0;
+    background: #001930;
+    height: 100vh;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: none;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-  }
-  .navigation.open {
-    height: 100vh;
+    -webkit-clip-path: circle(0vh at 90% -20%);
+            clip-path: circle(0vh at 90% -20%);
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
